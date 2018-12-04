@@ -1,6 +1,6 @@
 # RSS_Reader
 
-Файл запуска RSS_Reader.py
+Исполняемый файл -  Reader.py
 
 В строку "Feed URL" вставляем адресс RSS и нажимаем "Get Feed"
 В окне слева появляются последние 10 статей. Если кликнуть мышкой, то появится краткое содержание статьи, если сделать дабл клик, то статья откроется в виджете браузера.
@@ -11,23 +11,7 @@
 
 # Список импортируемых модулей:
 
-import feedparser
-
-import os
-
-import unidecode
-
-import wx
-
-import wx.html2 as webview
-
-import re
-
-import sqlite3
-
-import sys
-
-from ObjectListView import ObjectListView, ColumnDefn
+wx, feedparser, os, unidecode, wx.html2, re, sqlite3, sys, ObjectListView 
 
 # Для работы программы на Windows:
 
@@ -55,6 +39,9 @@ $ pip install feedparser
 
 $ pip install unidecode
 
+# Если консоль пишет, что pip не найдет, попробуйте pip2
+# Или же укажите полный путь:
+C:\Python34\Tools\Scripts\pip.exe install feedparser
 
 
 
